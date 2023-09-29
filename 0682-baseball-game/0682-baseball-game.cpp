@@ -1,39 +1,27 @@
 class Solution {
 public:
-    int calPoints(vector<string>& ops) {
-        stack<int> stack;
-        int sum =  0;
-        
-        for (int i = 0; i < ops.size(); i++){
-            if (ops[i] == "+"){
-                int first = stack.top();
-                stack.pop();
-                
-                int second = stack.top();
-                
-                stack.push(first);
-                
-                stack.push(first + second);
-                
-                sum += first + second;
+    int calPoints(vector<string>& operations) {
+        vector<int> vec;
+        for(auto i: operations) {
+            if(i == "C") {
+                if (!vec.empty()) {
+                    vec.pop_back();
+                }
             }
-            
-            else if (ops[i] == "D"){
-                sum += 2 * stack.top();
-                stack.push(2 * stack.top());
+            else if(i == "D") {
+                if (!vec.empty()) {
+                    vec.push_back(2 * vec.back());
+                }
             }
-            
-            else if (ops[i] == "C"){
-                sum -= stack.top();
-                stack.pop();
+            else if (i == "+") {
+                if (vec.size() >= 2) {
+                    vec.push_back(vec[vec.size() - 1] + vec[vec.size() - 2]);
+                }
             }
-            
-            else{
-                sum += stoi(ops[i]);
-                stack.push(stoi(ops[i]));
+            else {
+                vec.push_back(stoi(i));
             }
         }
-        
-        return sum;
+        return accumulate(vec.begin(), vec.end(), 0);
     }
 };
