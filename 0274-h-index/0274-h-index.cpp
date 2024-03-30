@@ -1,4 +1,5 @@
 class Solution {
+//     O(nlogn) TIME
 public:
     int hIndex(vector<int>& citations) {
         int count =0;
@@ -8,7 +9,6 @@ public:
             if(citations[i]>i)
             {
                 count++;
-                cout<<"count "<<count<<endl;
             }
         }
         return count;
