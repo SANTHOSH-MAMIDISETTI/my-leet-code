@@ -1,15 +1,20 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        unordered_set<int> set;
+        unordered_set<int> sol;
+        bool status;
         for(int i:nums)
         {
-            set.insert(i);
+            sol.insert(i);
         }
-        if(set.size()==nums.size())
+        if(nums.size()==sol.size())
         {
-            return false;
+            status = false;
         }
-    return true;
+        else
+        {
+            status = true;
+        }
+        return status;
     }
 };
