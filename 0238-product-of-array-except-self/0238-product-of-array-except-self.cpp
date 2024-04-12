@@ -33,3 +33,16 @@ vector<int> productExceptSelf(std::vector<int>& nums) {
 }
 
 };
+
+
+/*
+    THE CORRECT WAY
+*/
+
+// class Solution {
+// public:
+//     vector<int> productExceptSelf(std::vector<int>& nums) {
+
+// }
+
+// };
