@@ -25,7 +25,7 @@
 
 //         return true; // It is a palindrome
 //     }
-// };
+// }; 
 
 class Solution {
 public:
