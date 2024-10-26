@@ -2,3 +2,4 @@
 58-length-of-last-word|Easy|1729881000000
 13-roman-to-integer|Easy|1729881000000
 392-is-subsequence|Easy|1729881000000
+135-candy|Hard|1729881000000
