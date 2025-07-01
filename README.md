@@ -20,4 +20,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0792-binary-search](https://github.com/SANTHOSH-MAMIDISETTI/my-leet-code/tree/master/0792-binary-search) |
+## String
+|  |
+| ------- |
+| [0010-regular-expression-matching](https://github.com/SANTHOSH-MAMIDISETTI/my-leet-code/tree/master/0010-regular-expression-matching) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0010-regular-expression-matching](https://github.com/SANTHOSH-MAMIDISETTI/my-leet-code/tree/master/0010-regular-expression-matching) |
+## Recursion
+|  |
+| ------- |
+| [0010-regular-expression-matching](https://github.com/SANTHOSH-MAMIDISETTI/my-leet-code/tree/master/0010-regular-expression-matching) |
 <!---LeetCode Topics End-->
